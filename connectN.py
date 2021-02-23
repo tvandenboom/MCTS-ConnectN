@@ -48,7 +48,6 @@ class ConnectFour:
 
     def check_win(self):
         #Checks for a winning position for both players relative to self.last_move:
-        #Check for row wins
         y,x = self.last_move
 
         #Check for column wins containing self.last_move (there can be only one):
