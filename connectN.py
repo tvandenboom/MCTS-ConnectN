@@ -7,9 +7,9 @@ class ConnectFour:
 
     #Each ConnectFour object is a board_state, which is an array
     #of 0's (empty squares), 1's (red chips) and -1's (black chips).
-    #The red chips are played on odd turns, black chips on even turns.
+    #The red chips are played on even turns (initial turn is turn 0), black chips on odd turns.
     def __init__(self):
-        #On initialization, the board_state is empty and the turn is 1
+        #On initialization, the board_state is empty, the turn is 0, the game is not won, all moves are legal, and the last move is nonsense.
         self.board_state = np.zeros((self.num_rows,self.num_cols), dtype=int)
         self.turn = 0
         self.is_won = False
